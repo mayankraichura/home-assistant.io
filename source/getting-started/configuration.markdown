@@ -9,7 +9,7 @@ sharing: true
 footer: true
 ---
 
-Home Assistant will create a configuration folder when it is run for the first time. The location of the folder differs between operating systems: on OS X and Linux it's `~/.homeassistant` and on Windows it's `%APPDATA%/.homeassistant`. If you want to use a different folder for configuration, run `hass --config path/to/config`.
+Home Assistant will create a configuration folder when it is run for the first time. The location of the folder differs between operating systems: on OS X and Linux it's `~/.homeassistant` or `/var/opt/homeassistant` (if you are using hass-daemon) and on Windows it's `%APPDATA%/.homeassistant`. If you want to use a different folder for configuration, run `hass --config path/to/config`.
 
 Inside your configuration folder is the file `configuration.yaml`. This is the main file that contains which components will be loaded and what their configuration is. This file contains YAML code, which is explained briefly below. [An example configuration file is located here](https://github.com/home-assistant/home-assistant/blob/master/config/configuration.yaml.example).
 
